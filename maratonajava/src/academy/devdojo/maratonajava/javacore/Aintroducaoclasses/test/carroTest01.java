@@ -22,6 +22,16 @@ public class carroTest01 {
 		System.out.println("-----------------------------------");
 		System.out.println("Carro 2");
 		System.out.println("Nome: " + carro02.nome + " |Modelo: " + carro02.modelo + " |Ano: " + carro02.ano);
+		
+		//Referência de objetos
+		System.out.println("/////////////////////////////////////////////");
+		carro01 = carro02;
+		System.out.println("carro 1 recebe carro 2");
+		System.out.println("Carro 1");
+		System.out.println("Nome: " + carro01.nome + " |Modelo: " + carro01.modelo + " |Ano: " + carro01.ano);
+		System.out.println("-----------------------------------");
+		System.out.println("Carro 2");
+		System.out.println("Nome: " + carro02.nome + " |Modelo: " + carro02.modelo + " |Ano: " + carro02.ano);
 	}
 
 }
