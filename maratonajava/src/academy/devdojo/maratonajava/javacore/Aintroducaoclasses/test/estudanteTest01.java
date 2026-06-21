@@ -1,8 +1,8 @@
-package academy.devdojo.maratonajava.javacore.introducaoclasses.test;
+package academy.devdojo.maratonajava.javacore.Aintroducaoclasses.test;
 
-import academy.devdojo.maratonajava.javacore.introducaoclasses.model.estudante;
+import academy.devdojo.maratonajava.javacore.Aintroducaoclasses.model.estudante;
 
-public class estudanteTest {
+public class estudanteTest01 {
 
 	public static void main(String[] args) {
 		estudante estudante = new estudante();
@@ -13,6 +13,7 @@ public class estudanteTest {
 		System.out.println(estudante.nome );
 		System.out.println(estudante.idade );
 		System.out.println(estudante.sexo );
+		System.out.println(estudante);
 	}
 
 }
