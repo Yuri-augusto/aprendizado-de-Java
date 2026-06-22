@@ -1,0 +1,13 @@
+!SESSION 2026-06-21 17:07:19.251 -----------------------------------------------
+eclipse.buildId=4.40.0.20260604-0652
+java.version=21.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product -data /home/yuri/Documentos/GitHub/maratona-java/maratonajava
+
+!ENTRY ch.qos.logback.classic 1 0 2026-06-21 17:07:30.260
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-06-21 17:07:35.726
+!MESSAGE Logback config file: /home/yuri/Documentos/GitHub/maratona-java/maratonajava/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
