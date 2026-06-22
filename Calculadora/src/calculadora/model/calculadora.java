@@ -9,7 +9,7 @@ public class calculadora {
 	
 	public void soma() {
 		
-		System.out.println("==============================================");
+		System.out.println("===================================================================");
 		System.out.println("Digite a quantidade de somas: ");
 		int quantidade = sc.nextInt();
 		
@@ -23,7 +23,7 @@ public class calculadora {
 	}
 	
 	public void subtracao() {
-		System.out.println("==============================================");
+		System.out.println("===================================================================");
 		System.out.println("Digite a quantidade de subtrações: ");
 		int quantidade = sc.nextInt();
 	    double resultado = 0;
@@ -43,7 +43,7 @@ public class calculadora {
 	}
 	
 	public void multiplicacao() {
-		System.out.println("==============================================");
+		System.out.println("===================================================================");
 		System.out.println("Digite a quantidade de Multiplicações: ");
 		
 		int quantidade = sc.nextInt();
@@ -63,7 +63,7 @@ public class calculadora {
 	}
 	
 	public void divisao() {
-		System.out.println("==============================================");
+		System.out.println("===================================================================");
 		System.out.println("Digite o primeiro numero: ");
 		Double numero1 = sc.nextDouble();
 		System.out.println("Digite o Segundo numero: ");
@@ -77,7 +77,7 @@ public class calculadora {
 	}
 	
 	public void raiz() {
-		System.out.println("==============================================");
+		System.out.println("===================================================================");
 		System.out.println("Digite o numero para calcular a raiz quadrada:");
 		Double numero = sc.nextDouble();
 		double raiz = numero;
@@ -85,7 +85,7 @@ public class calculadora {
 	}
 	
 	public void bhaskara() {
-		System.out.println("==============================================");
+		System.out.println("===================================================================");
 		System.out.println("Digite o A");
 		Double a = sc.nextDouble();
 		System.out.println("Digite o B");
@@ -96,7 +96,7 @@ public class calculadora {
 		if(delta >= 0) {
 			double xum = (-b + Math.sqrt(delta)) / 2*a;
 			double xdois = (-b - Math.sqrt(delta)) / 2*a;
-			System.out.println("==============================================");
+			System.out.println("===================================================================");
 			System.out.println("X Um: " + xum + " | X Dois: " + xdois);
 			
 		}else {
@@ -104,7 +104,7 @@ public class calculadora {
 		}
 	}
 	public void potencia(){
-		System.out.println("==============================================");
+		System.out.println("===================================================================");
 		System.out.println("Digite a quantidade de potencias");
 		int quantidade = sc.nextInt();
 		if(quantidade <= 0) {
@@ -122,9 +122,9 @@ public class calculadora {
 		    for (int i = 1; i < numeros.length; i++) {
 		        resultado = Math.pow(resultado, numeros[i]);
 		    }
-		    System.out.println("==============================================");
+		    System.out.println("===================================================================");
 		    System.out.println(resultado);
-		    System.out.println("==============================================");
+		    System.out.println("===================================================================");
 		}
 	}
 	//Area de "interface"
@@ -136,17 +136,23 @@ public class calculadora {
 		return(cont);
 	}
 	public int selecao() {
-		System.out.println("==============================================");
-		System.out.println("Digite 1 para Soma:                          |");
-		System.out.println("Digite 2 para Sobtração:                     |");
-		System.out.println("Digite 3 para Multiplicação:                 |");
-		System.out.println("Digite 4 para Divisão:                       |");
-		System.out.println("Digite 5 para Raiz quadrada:                 |");
-		System.out.println("Digite 6 para Formula de Bhaskara            |");
-		System.out.println("Digite 7 para Potencia                       |");
-		System.out.println("==============================================");
-		System.out.println("Digite 9 para fechar o programa:             |");
-		System.out.println("==============================================");
+		System.out.println("===================================================================");
+		System.out.println(" ███   ███  █      ███  █   █ █      ███  ████   ███  ████   ███  \n"
+				+ "█     █   █ █     █     █   █ █     █   █ █   █ █   █ █   █ █   █ \n"
+				+ "█     █████ █     █     █   █ █     █████ █   █ █   █ ████  █████ \n"
+				+ "█     █   █ █     █     █   █ █     █   █ █   █ █   █ █  █  █   █ \n"
+				+ " ███  █   █ █████  ███   ███  █████ █   █ ████   ███  █   █ █   █ ");
+		System.out.println("===================================================================");
+		System.out.println("Digite 1 para Soma:                                               |");
+		System.out.println("Digite 2 para Sobtração:                                          |");
+		System.out.println("Digite 3 para Multiplicação:                                      |");
+		System.out.println("Digite 4 para Divisão:                                            |");
+		System.out.println("Digite 5 para Raiz quadrada:                                      |");
+		System.out.println("Digite 6 para Formula de Bhaskara                                 |");
+		System.out.println("Digite 7 para Potencia                                            |");
+		System.out.println("===================================================================");
+		System.out.println("Digite 9 para fechar o programa:                                  |");
+		System.out.println("===================================================================");
 		int seletor = sc.nextInt();
 		return(seletor);
 	}

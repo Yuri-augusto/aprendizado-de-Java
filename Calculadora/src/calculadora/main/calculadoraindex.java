@@ -55,6 +55,7 @@ public class calculadoraindex {
 				}
 				if(seletor == 7) {
 					calculadora.potencia();
+					cont = calculadora.reiniciar();
 				}
 				
 			}
