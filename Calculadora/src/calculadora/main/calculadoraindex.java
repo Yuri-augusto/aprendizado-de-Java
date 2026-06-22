@@ -7,6 +7,7 @@ import calculadora.model.calculadora;
 public class calculadoraindex {
 
 	public static void main(String[] args) {
+		
 		calculadora calculadora = new calculadora();
 		Scanner sc = new Scanner(System.in);
 		int cont = 0;
@@ -27,47 +28,34 @@ public class calculadoraindex {
 			//calculos
 			
 			while(cont == 0) {
-				if(seletor == 1) {
-					System.out.println("==============================================");
-					System.out.println("Digite a quantidade de somas: ");
-					int quantidade = sc.nextInt();
-					
-					calculadora.soma(quantidade);
+				if(seletor == 1) {					
+					calculadora.soma();
 					cont = calculadora.reiniciar();
 				}
 				if(seletor == 2) {
-					System.out.println("==============================================");
-					System.out.println("Digite a quantidade de subtrações: ");
-					int quantidade = sc.nextInt();
-					
-					calculadora.subtracao(quantidade);
+					calculadora.subtracao();
 					cont = calculadora.reiniciar();
-
 				}
 				if(seletor == 3) {
-					System.out.println("==============================================");
-					System.out.println("Digite a quantidade de Multiplicações: ");
-					
-					int quantidade = sc.nextInt();
-					
-					calculadora.multiplicacao(quantidade);
+					calculadora.multiplicacao();
 					cont = calculadora.reiniciar();
-
 				}
 				if(seletor == 4) {
-					System.out.println("==============================================");
-					System.out.println("Digite o primeiro numero: ");
-					Double numero1 = sc.nextDouble();
-					System.out.println("Digite o Segundo numero: ");
-					Double numero2 = sc.nextDouble();
-					if(numero2 == 0) {
-						System.out.println("Não existe divisão por zero");
-						continue;
-					}
-					calculadora.divisao(numero1, numero2);
+					calculadora.divisao();
 					cont = calculadora.reiniciar();
 				}
-				
+				if (seletor == 5) {
+					
+					calculadora.raiz();
+					cont = calculadora.reiniciar();
+				}
+				if(seletor == 6){
+					calculadora.bhaskara();
+					cont = calculadora.reiniciar();
+				}
+				if(seletor == 7) {
+					calculadora.potencia();
+				}
 				
 			}
 		}
