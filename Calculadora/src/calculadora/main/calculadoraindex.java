@@ -46,29 +46,35 @@ public class calculadoraindex {
 					cont = sc.nextInt();
 				}
 				if(seletor == 2) {
+					System.out.println("==============================================");
 					System.out.println("Digite a quantidade de subtrações: ");
 					int quantidade = sc.nextInt();
 					
 					calculadora.subtracao(quantidade);
 					System.out.println("Digite 0 para continuar | Digite qualquer outro numero para sair: ");
+					System.out.println("==============================================");
 					cont = sc.nextInt();
 				}
 				if(seletor == 3) {
+					System.out.println("==============================================");
 					System.out.println("Digite a quantidade de Multiplicações: ");
 					
 					int quantidade = sc.nextInt();
 					
 					calculadora.multiplicacao(quantidade);
 					System.out.println("Digite 0 para continuar | Digite qualquer outro numero para sair: ");
+					System.out.println("==============================================");
 					cont = sc.nextInt();
 				}
 				if(seletor == 4) {
+					System.out.println("==============================================");
 					System.out.println("Digite o primeiro numero: ");
 					Double numero1 = sc.nextDouble();
 					System.out.println("Digite o Segundo numero: ");
 					Double numero2 = sc.nextDouble();
 					calculadora.divisao(numero1, numero2);
 					System.out.println("Digite 0 para continuar | Digite qualquer outro numero para sair: ");
+					System.out.println("==============================================");
 					cont = sc.nextInt();
 				}
 				
