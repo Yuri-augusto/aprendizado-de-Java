@@ -1,9 +1,11 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.model;
 
 public class funcionario {
-	public String nome;
-	public int idade;
-	public float[] salario;
+	private String nome;
+	private int idade;
+	private float[] salario;
+	private float media = 0;
+	
 	
 	public void print() {
 		System.out.println("==========================");
@@ -15,8 +17,7 @@ public class funcionario {
 		System.out.println(" ");
 	}
 	
-	public void getsalario() {
-		float media = 0;
+	public void media() {
 		for (int i = 0; i < this.salario.length; i++) {
 			media = media + this.salario[i];
 		}
@@ -24,4 +25,30 @@ public class funcionario {
 		System.out.println("A media dos tres salarios são: " + media);
 		System.out.println("==========================");
 	}
+
+	//metodos set e get
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getIdade() {
+		return idade;
+	}
+
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+	public void setSalario(float[] salario) {
+		this.salario = salario;
+	}
+	
+	
+	
+	
 }
