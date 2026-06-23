@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.model;
 
+import java.util.Iterator;
+
 public class calculadora {
 	public void domadoisnumeros() {
 		System.out.println(10+10);
@@ -16,4 +18,21 @@ public class calculadora {
 	public double dividedoisnumeros(double num1, double num2) {
 		return(num1/num2);
 	}
+	
+	public void alteradoisnumeros(int num1, int num2){
+		num1 = 99;
+		num2 = 67;
+		System.out.println("Dentro do altera dois numeros");
+		System.out.println("Numero um: " + num1);
+		System.out.println("Numero dois: " + num2);
+	}
+	
+	public void somaarray(int[] numeros) {
+		int soma = 0;
+		for(int num: numeros){
+			soma += num;
+		}
+		System.out.println(soma);
+	}
+	
 }
